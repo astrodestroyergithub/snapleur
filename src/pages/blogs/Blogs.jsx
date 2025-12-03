@@ -88,7 +88,7 @@ const Blogs = () => {
           ))}
         </div>
         <div className="add-blog-container">
-          <button onClick={openModal} className="open-modal-btn">Create Blog Post</button>
+          <button onClick={openModal} className="open-modal-btn">Create GK Entry</button>
           {showModal && <ModalForm closeModal={closeModal} />}
         </div>
       </div>
