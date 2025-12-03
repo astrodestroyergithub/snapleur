@@ -35,7 +35,7 @@ const Blogs = () => {
 
   return (
     <>
-      <Header pageName={'Blogs'} />
+      <Header pageName={'Quiz'} />
       <div className="blog-header-buttons">
         {blogs.map((blog) => (
           <button
