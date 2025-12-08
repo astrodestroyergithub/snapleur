@@ -77,10 +77,6 @@ $no-chrome: #000;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis; 
-
-  /* .blog-excerpt-text {
-    font-family: 'Arial';
-  } */
 }
 
 .blog-tags {
@@ -109,6 +105,13 @@ $no-chrome: #000;
   margin-block-end: 3em;
 }
 
+.update-gk-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 3em;
+}
+
 .open-modal-btn {
   background-color: #1f5eff;
   color: white;
@@ -122,6 +125,21 @@ $no-chrome: #000;
 
 .open-modal-btn:hover {
   background-color: darken(#1f5eff, 10%);
+}
+
+.open-update-modal-btn {
+  background-color: #55f387;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.open-update-modal-btn:hover {
+  background-color: darken(#55f387, 10%);
 }
 
 @media (max-width: 768px) {

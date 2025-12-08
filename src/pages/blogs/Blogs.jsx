@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import ModalForm from './ModalForm'
+import UpdateModalForm from './UpdateModalForm'
 import BackToTopButton from './BackToTopButton'
 import SummaryInputBox from './AIResponseBox/SummaryInputBox'
 import './Blogs.scss'
@@ -9,9 +10,13 @@ import './Blogs.scss'
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [showModal, setShowModal] = useState(false);
+  const [showUpdateModal, setShowUpdateModal] = useState(false);
 
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
+
+  const openUpdateModal = () => setShowUpdateModal(true);
+  const closeUpdateModal = () => setShowUpdateModal(false);
 
   const cardRefs = useRef({});
 
@@ -58,9 +63,6 @@ const Blogs = () => {
               </div>
               <div className="blog-content">
                 <h2 className="blog-title">{blog.qno}</h2>
-                {/* <p className="blog-excerpt">
-                  {blog.excerpt}
-                </p> */}
                 <p
                   className="blog-excerpt"
                   dangerouslySetInnerHTML={{
@@ -90,6 +92,10 @@ const Blogs = () => {
         <div className="add-blog-container">
           <button onClick={openModal} className="open-modal-btn">Create GK Entry</button>
           {showModal && <ModalForm closeModal={closeModal} />}
+        </div>
+        <div className="update-gk-container">
+          <button onClick={openUpdateModal} className="open-update-modal-btn">Update GK Entry</button>
+          {showUpdateModal && <UpdateModalForm closeModal={closeUpdateModal} />}
         </div>
       </div>
       <BackToTopButton />

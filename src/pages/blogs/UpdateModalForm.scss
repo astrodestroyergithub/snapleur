@@ -1,0 +1,88 @@
+$update-gk-theme-color: #55f387;
+
+.update-gk-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.update-gk-modal-container {
+  background-color: white;
+  padding: 9px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.update-gk-card-modal-heading {
+  text-align: center;
+  font-size: 15px;
+  color: $update-gk-theme-color;
+}
+
+.update-gk-modal-form label {
+  font-weight: bold;
+  font-size: 12px;
+  color: #333;
+}
+
+.update-gk-modal-form input,
+.update-gk-modal-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.update-gk-modal-form input:focus,
+.update-gk-modal-form textarea:focus {
+  border-color: $update-gk-theme-color;
+  outline: none;
+}
+
+.update-gk-modal-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.update-gk-submit-btn {
+  background-color: $update-gk-theme-color;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.update-gk-submit-btn:hover {
+  background-color: darken($update-gk-theme-color, 10%);
+}
+
+.update-gk-close-btn {
+  background-color: #ccc;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+
+.update-gk-close-btn:hover {
+  background-color: darken(#ccc, 10%);
+}
