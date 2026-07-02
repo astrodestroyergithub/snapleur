@@ -44,4 +44,4 @@ The application will open automatically in your default browser at [http://local
   set PORT=3001 && npm start  (macOS/Linux)
 ```
 
-**View Live Website:** [CnApp](https://cnapp-dashboard-tamojit-roy.netlify.app/)
+**View Live Website:** [Snapleur](https://cnapplatform.netlify.app/)
